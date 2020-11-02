@@ -22,7 +22,7 @@
 # https://www.w3.org/TR/cors/
 
 # (!) Do not use this without understanding the consequences.
-#     This will permit access from any other website.
+#     This will permit access from any other Website.
 #     Instead of using this file, consider using a specific rule such as
 #     allowing access based on (sub)domain:
 #
@@ -408,7 +408,7 @@ AddDefaultCharset utf-8
 #     https://github.com/h5bp/server-configs-apache/issues/52
 
 # Be aware that the following might not be a good idea if you use "real"
-# subdomains for certain parts of your website.
+# subdomains for certain parts of your Website.
 
 # <IfModule mod_rewrite.c>
 
@@ -438,7 +438,7 @@ AddDefaultCharset utf-8
 # | Frame Options                                                      |
 # ----------------------------------------------------------------------
 
-# Protect website against clickjacking.
+# Protect Website against clickjacking.
 #
 # The example below sends the `X-Frame-Options` response header with the value
 # `DENY`, informing browsers not to display the content of the web page in any
@@ -450,8 +450,8 @@ AddDefaultCharset utf-8
 # https://tools.ietf.org/html/rfc7034#section-2.1.
 #
 # Keep in mind that while you could send the `X-Frame-Options` header for all
-# of your website's pages, this has the potential downside that it forbids even
-# non-malicious framing of your content (e.g.: when users visit your website
+# of your Website's pages, this has the potential downside that it forbids even
+# non-malicious framing of your content (e.g.: when users visit your Website
 # using a Google Image Search results page).
 #
 # Nonetheless, you should ensure that you send the `X-Frame-Options` header for
@@ -459,7 +459,7 @@ AddDefaultCharset utf-8
 # that contain one-click purchase links, checkout or bank-transfer confirmation
 # pages, pages that make permanent configuration changes, etc.).
 #
-# Sending the `X-Frame-Options` header can also protect your website against
+# Sending the `X-Frame-Options` header can also protect your Website against
 # more than just clickjacking attacks.
 # https://cure53.de/xfo-clickjacking.pdf.
 #
@@ -480,14 +480,14 @@ AddDefaultCharset utf-8
 # attacks.
 #
 # This can be done by setting a `Content Security Policy` which whitelists
-# trusted sources of content for your website.
+# trusted sources of content for your Website.
 #
 # There is no policy that fits all websites, you will have to modify the
 # `Content-Security-Policy` directives in the example depending on your needs.
 #
 # The example policy below aims to:
 #
-#  (1) Restrict all fetches by default to the origin of the current website by
+#  (1) Restrict all fetches by default to the origin of the current Website by
 #      setting the `default-src` directive to `'self'` - which acts as a
 #      fallback to all "Fetch directives" (https://developer.mozilla.org/en-US/docs/Glossary/Fetch_directive).
 #
@@ -496,16 +496,16 @@ AddDefaultCharset utf-8
 #      `connect-src 'self'; font-src 'self'; script-src 'self'; style-src 'self'`, etc.
 #
 #      This restriction also means that you must explicitly define from which
-#      site(s) your website is allowed to load resources from.
+#      site(s) your Website is allowed to load resources from.
 #
-#  (2) The `<base>` element is not allowed on the website. This is to prevent
+#  (2) The `<base>` element is not allowed on the Website. This is to prevent
 #      attackers from changing the locations of resources loaded from relative
 #      URLs.
 #
 #      If you want to use the `<base>` element, then `base-uri 'self'` can be
 #      used instead.
 #
-#  (3) Form submissions are only allowed from the current website by setting:
+#  (3) Form submissions are only allowed from the current Website by setting:
 #      `form-action 'self'`.
 #
 #  (4) Prevents all websites (including your own) from embedding your webpages
@@ -523,7 +523,7 @@ AddDefaultCharset utf-8
 #      `upgrade-insecure-requests` directive.
 #
 #      Please note that `upgrade-insecure-requests` does not ensure HTTPS for
-#      the top-level navigation. If you want to force the website itself to be
+#      the top-level navigation. If you want to force the Website itself to be
 #      loaded over HTTPS you must include the `Strict-Transport-Security`
 #      header.
 #
@@ -602,7 +602,7 @@ AddDefaultCharset utf-8
 #
 # (!) Update the `<FilesMatch>` regular expression from below to include any
 #     files that might end up on your production server and can expose
-#     sensitive information about your website. These files may include:
+#     sensitive information about your Website. These files may include:
 #     configuration files, files that contain metadata about the project (e.g.:
 #     project dependencies, build scripts, etc.).
 
@@ -619,7 +619,7 @@ AddDefaultCharset utf-8
 # Force client-side TLS (Transport Layer Security) redirection.
 #
 # If a user types `example.com` in their browser, even if the server redirects
-# them to the secure version of the website, that still leaves a window of
+# them to the secure version of the Website, that still leaves a window of
 # opportunity (the initial HTTP connection) for an attacker to downgrade or
 # redirect the request.
 #
@@ -676,7 +676,7 @@ AddDefaultCharset utf-8
 # | Cross-Site Scripting (XSS) Protection                              |
 # ----------------------------------------------------------------------
 
-# Protect website reflected Cross-Site Scripting (XSS) attacks.
+# Protect Website reflected Cross-Site Scripting (XSS) attacks.
 #
 # (1) Try to re-enable the cross-site scripting (XSS) filter built into most
 #     web browsers.
@@ -702,7 +702,7 @@ AddDefaultCharset utf-8
 #
 # (!) Do not rely on the XSS filter to prevent XSS attacks! Ensure that you are
 #     taking all possible measures to prevent XSS attacks, the most obvious
-#     being: validating and sanitizing your website's inputs.
+#     being: validating and sanitizing your Website's inputs.
 #
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
 # https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-iv-the-xss-filter/
@@ -1011,7 +1011,7 @@ ServerSignature Off
 
 # Prevent intermediate caches or proxies (such as those used by mobile
 # network providers) and browsers data-saving features from modifying
-# the website's content using the `cache-control: no-transform` directive.
+# the Website's content using the `cache-control: no-transform` directive.
 #
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 # https://tools.ietf.org/html/rfc7234#section-5.2.2.4
