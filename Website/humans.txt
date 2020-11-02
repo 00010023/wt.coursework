@@ -2,11 +2,11 @@
 
 # TEAM
 
-    Genemator -- Creator & Student Developer -- genemator
+    Genemator -- Creator & Student Developer -- @genemator
 
 # THANKS
 
-    Bunyod Khoshimkhujaev
+    Bunyod Khoshimkhujaev -- Tutor -- @bunyodkh
 
 # TECHNOLOGY COLOPHON
 
