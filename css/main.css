@@ -10,10 +10,8 @@ html {
 
 /*
  * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
  *
  * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
  *
  * Customize the background color to match your design.
  */
@@ -44,7 +42,6 @@ hr {
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 audio,
@@ -93,11 +90,9 @@ textarea {
 
 /*
  * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
  * 1. For long content, line feeds are not interpreted as spaces and small width
  *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
 .sr-only {
@@ -116,7 +111,6 @@ textarea {
 /*
  * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
  */
 
 .sr-only.focusable:active,
@@ -180,7 +174,6 @@ textarea {
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -228,7 +221,6 @@ textarea {
 
   /*
    * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
   thead {
     display: table-header-group;
