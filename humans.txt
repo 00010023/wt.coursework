@@ -1,0 +1,14 @@
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Genemator -- Creator -- genemator
+
+# THANKS
+
+    Bunyod Khoshimkhujaev
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
