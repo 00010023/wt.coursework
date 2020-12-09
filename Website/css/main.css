@@ -1,11 +1,33 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+   @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  box-sizing: content-box;
+}
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
+  overflow: visible;
+  overflow-x: hidden;
+
+}
+body{
+  box-sizing: border-box;
+  box-sizing: content-box;
+  background-color: #010001;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  height: 100vh;
+  color: white;
 }
 
 /*
@@ -154,15 +176,326 @@ textarea {
   clear: both;
 }
 
+/* making first div */
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: content-box;
+  box-sizing: border-box;
+}
+
+
+.firstd{
+
+  box-sizing: content-box;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 0;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/jpeg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 2px 2px 50px 415px rgba(0,0,0,0.60); 
+  box-shadow: inset 2px 2px 50px 415px rgba(0,0,0,0.60);
+
+  background-blend-mode: darken;
+  background-size: cover;
+  
+
+
+}
+.firstd img{
+  width: 80px;
+
+  height: auto;
+  margin: 10px 0px 10px 20px;
+}
+.firstd .btn{
+  border-radius: 10px;
+  color: white;
+
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: red;
+  word-wrap: none;
+  word-break: keep-all;
+  height: auto;
+
+  padding: 10px 15px 10px 15px;
+}
+
+.firstd .btn:hover{
+  cursor: pointer;
+}
+ul{
+  margin: auto;
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+header{
+  height: auto;
+  box-sizing: content-box;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+ul li, 
+ul li a{
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+
+}
+.header{
+  
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  width: 98%;
+}
+
+.container1 {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 90%;
+  top: 4%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.text{
+
+
+  font-size: 56px;
+  font-weight: bolder;
+  color: white;
+
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  word-break: keep-all;
+  word-wrap: break-word;
+  text-align: center;
+}
+.text p{
+  width: 60%;
+}
+.p{
+  font-weight: lighter;
+  font-size: 30px;
+}
+.p1{
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+form{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+form input:first-child{
+  font-size: 20px;
+  padding: 20px 10px 20px 10px;
+  width: 30%;
+  border: none;
+  outline: none;
+
+}
+form button{
+  font-size: 20px;
+  padding: 20px 10px 20px 10px;
+  width: 20%;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+}
+.post{
+  border-bottom: 2px solid rgb(71, 71, 71);
+  box-sizing: content-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 5% 10% 5% 10%;
+}
+.info{
+  width: 30%;
+
+}
+.show{
+  width: 30%;
+}
+
+.quest{
+  margin: 1% 0 1% 0;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.first-p{
+  background-color: #222;
+  margin: auto;
+  margin-top: 10px;
+  width: 40%;
+  padding: 5px 15px 5px 15px;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.first-p{
+
+  border: none;
+  outline: none;
+  background-color: #222;;
+  color: white;
+  font-size: 20px;
+}
+.first-p p{
+  font-size: 30px;
+}
+.first-p h4{
+  width: auto;
+  height: auto;
+
+} 
+.second-p{
+
+  background-color: #222;
+  margin: auto;
+  width: auto;
+  word-break: keep-all;
+  word-wrap: break-word;
+  padding: 20px 15px 20px 15px;
+  height: auto;
+  border: 1px solid black;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+
+.par,
+.par1,
+.par2{
+  transform: rotate(45deg);
+}
+
+video{
+  width: 80%;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  height: 150px;
+}
+
+.active, .first-p:hover{
+  /* transform: rotate(45deg);
+  animation-timing-function: ease-in 0.1s;
+  transition-duration: 0.3s; */
+  cursor: pointer;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+
+  
+   @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -244,3 +577,92 @@ textarea {
   }
 }
 
+
+
+
+@media only screen and (max-width: 761px){
+  body{
+   width: 100%;
+   margin: 0!important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  header{
+    display: grid;
+  }
+  .container1{
+      display: inline-block;
+  }
+  ul{
+      width: 100%;
+      display: none;
+      flex-direction: column;  
+      flex-wrap: wrap; 
+      text-align: left;
+      padding-left: 5%; 
+      justify-content: center;
+      align-content: center;
+      align-content: center;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .text form input:first-child,
+  .text form button{
+    margin-top: 10px;
+    width: 90%;
+  }
+  .text p{
+    width: 80%;
+  }
+  .text p:first-child{
+    margin-top: 7%;
+    font-size: 30px!important;
+  }
+  .text p{
+    font-size: 20px;
+  }
+  .text .p1{
+    font-size: 15px;
+  }
+  .quest button,
+  .quest .second-p{
+    width: 70%;
+    font-size: 15px;
+  }
+
+}
+@media only screen and (max-width: 761px){
+  body{
+   width: 100%;
+   margin: 0!important;
+  }
+  .cards-wrapper{
+      padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .cards-wrapper {
+
+      padding: 4rem 2rem;
+    }
+    .card {
+      max-width: calc(100vw - 4rem);
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .info {
+      display: block;
+      text-align: center;
+    }
+    .info h1 {
+      margin: 0;
+    }
+  }
